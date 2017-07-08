@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Override point for customization after application launch.
         // change color of tab bar's items
-        UITabBar.appearance().tintColor = .green
+        UITabBar.appearance().tintColor = UIColor(red: 0.0/255.0, green: 152.0/255.0, blue: 103.0/255.0,
+                                                  alpha: 1.0)
+
         return true
     }
 
