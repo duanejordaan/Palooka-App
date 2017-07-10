@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEB73BC991F43DC560450411 /* Pods_Palooka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADD56DC100AC79B4ECCA1DF /* Pods_Palooka.framework */; };
+		DBB1FA1D1F135BB000781F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB1FA1C1F135BB000781F05 /* Main.storyboard */; };
+		DBB1FA1F1F1365C600781F05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBB1FA1E1F1365C600781F05 /* GoogleService-Info.plist */; };
 		DBB621001F111F2500DC32DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB620FF1F111F2500DC32DF /* AppDelegate.swift */; };
 		DBB621021F111F2500DC32DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB621011F111F2500DC32DF /* ViewController.swift */; };
 		DBB621071F111F2500DC32DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB621061F111F2500DC32DF /* Assets.xcassets */; };
@@ -22,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32F424FB08293EC210271D8E /* Pods-Palooka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palooka.release.xcconfig"; path = "Pods/Target Support Files/Pods-Palooka/Pods-Palooka.release.xcconfig"; sourceTree = "<group>"; };
+		5ADD56DC100AC79B4ECCA1DF /* Pods_Palooka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Palooka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F60F988AA9F9E914C3FE76C /* Pods-Palooka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palooka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Palooka/Pods-Palooka.debug.xcconfig"; sourceTree = "<group>"; };
+		DBB1FA1C1F135BB000781F05 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DBB1FA1E1F1365C600781F05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBB620FC1F111F2500DC32DF /* Palooka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palooka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB620FF1F111F2500DC32DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB621011F111F2500DC32DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB73BC991F43DC560450411 /* Pods_Palooka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B510107ECA3EE77B80ABE39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F60F988AA9F9E914C3FE76C /* Pods-Palooka.debug.xcconfig */,
+				32F424FB08293EC210271D8E /* Pods-Palooka.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B06A85DC3153C99B28B15B56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ADD56DC100AC79B4ECCA1DF /* Pods_Palooka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DBB620F31F111F2500DC32DF = {
 			isa = PBXGroup;
 			children = (
 				DBB620FE1F111F2500DC32DF /* Palooka */,
 				DBB620FD1F111F2500DC32DF /* Products */,
+				7B510107ECA3EE77B80ABE39 /* Pods */,
+				B06A85DC3153C99B28B15B56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,13 +96,15 @@
 		DBB620FE1F111F2500DC32DF /* Palooka */ = {
 			isa = PBXGroup;
 			children = (
-				DBB621171F11207600DC32DF /* View Controllers */,
 				DBB620FF1F111F2500DC32DF /* AppDelegate.swift */,
+				DBB621171F11207600DC32DF /* View Controllers */,
 				DBB621011F111F2500DC32DF /* ViewController.swift */,
 				DBB621061F111F2500DC32DF /* Assets.xcassets */,
 				DBB621081F111F2500DC32DF /* LaunchScreen.storyboard */,
 				DBB6210B1F111F2500DC32DF /* Info.plist */,
 				DBB621111F111F5000DC32DF /* Start.storyboard */,
+				DBB1FA1C1F135BB000781F05 /* Main.storyboard */,
+				DBB1FA1E1F1365C600781F05 /* GoogleService-Info.plist */,
 			);
 			path = Palooka;
 			sourceTree = "<group>";
@@ -100,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBB6210E1F111F2500DC32DF /* Build configuration list for PBXNativeTarget "Palooka" */;
 			buildPhases = (
+				2C8F5D6C37C4CE200E9A1C0D /* [CP] Check Pods Manifest.lock */,
 				DBB620F81F111F2500DC32DF /* Sources */,
 				DBB620F91F111F2500DC32DF /* Frameworks */,
 				DBB620FA1F111F2500DC32DF /* Resources */,
+				0A54D78D13ACD131728327B9 /* [CP] Embed Pods Frameworks */,
+				83FA6B190180E60C59CDFFB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,11 +187,61 @@
 			files = (
 				DBB6210A1F111F2500DC32DF /* LaunchScreen.storyboard in Resources */,
 				DBB621071F111F2500DC32DF /* Assets.xcassets in Resources */,
+				DBB1FA1F1F1365C600781F05 /* GoogleService-Info.plist in Resources */,
 				DBB621121F111F5000DC32DF /* Start.storyboard in Resources */,
+				DBB1FA1D1F135BB000781F05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A54D78D13ACD131728327B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Palooka/Pods-Palooka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C8F5D6C37C4CE200E9A1C0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83FA6B190180E60C59CDFFB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Palooka/Pods-Palooka-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DBB620F81F111F2500DC32DF /* Sources */ = {
@@ -288,6 +371,7 @@
 		};
 		DBB6210F1F111F2500DC32DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F60F988AA9F9E914C3FE76C /* Pods-Palooka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Palooka/Info.plist;
@@ -300,6 +384,7 @@
 		};
 		DBB621101F111F2500DC32DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F424FB08293EC210271D8E /* Pods-Palooka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Palooka/Info.plist;
@@ -329,6 +414,7 @@
 				DBB621101F111F2500DC32DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
