@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AEB73BC991F43DC560450411 /* Pods_Palooka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADD56DC100AC79B4ECCA1DF /* Pods_Palooka.framework */; };
+		DB83C2B81F1514A500C196B7 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB83C2B51F1514A500C196B7 /* ProgressHUD.bundle */; };
+		DB83C2B91F1514A500C196B7 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83C2B71F1514A500C196B7 /* ProgressHUD.m */; };
 		DBB1FA1D1F135BB000781F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB1FA1C1F135BB000781F05 /* Main.storyboard */; };
 		DBB1FA1F1F1365C600781F05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBB1FA1E1F1365C600781F05 /* GoogleService-Info.plist */; };
 		DBB621001F111F2500DC32DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB620FF1F111F2500DC32DF /* AppDelegate.swift */; };
@@ -28,6 +30,10 @@
 		32F424FB08293EC210271D8E /* Pods-Palooka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palooka.release.xcconfig"; path = "Pods/Target Support Files/Pods-Palooka/Pods-Palooka.release.xcconfig"; sourceTree = "<group>"; };
 		5ADD56DC100AC79B4ECCA1DF /* Pods_Palooka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Palooka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F60F988AA9F9E914C3FE76C /* Pods-Palooka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palooka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Palooka/Pods-Palooka.debug.xcconfig"; sourceTree = "<group>"; };
+		DB83C2B41F1514A400C196B7 /* Palooka-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Palooka-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB83C2B51F1514A500C196B7 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		DB83C2B61F1514A500C196B7 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		DB83C2B71F1514A500C196B7 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		DBB1FA1C1F135BB000781F05 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DBB1FA1E1F1365C600781F05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBB620FC1F111F2500DC32DF /* Palooka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palooka.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +111,10 @@
 				DBB621111F111F5000DC32DF /* Start.storyboard */,
 				DBB1FA1C1F135BB000781F05 /* Main.storyboard */,
 				DBB1FA1E1F1365C600781F05 /* GoogleService-Info.plist */,
+				DB83C2B51F1514A500C196B7 /* ProgressHUD.bundle */,
+				DB83C2B61F1514A500C196B7 /* ProgressHUD.h */,
+				DB83C2B71F1514A500C196B7 /* ProgressHUD.m */,
+				DB83C2B41F1514A400C196B7 /* Palooka-Bridging-Header.h */,
 			);
 			path = Palooka;
 			sourceTree = "<group>";
@@ -158,6 +168,7 @@
 				TargetAttributes = {
 					DBB620FB1F111F2500DC32DF = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -187,6 +198,7 @@
 			files = (
 				DBB6210A1F111F2500DC32DF /* LaunchScreen.storyboard in Resources */,
 				DBB621071F111F2500DC32DF /* Assets.xcassets in Resources */,
+				DB83C2B81F1514A500C196B7 /* ProgressHUD.bundle in Resources */,
 				DBB1FA1F1F1365C600781F05 /* GoogleService-Info.plist in Resources */,
 				DBB621121F111F5000DC32DF /* Start.storyboard in Resources */,
 				DBB1FA1D1F135BB000781F05 /* Main.storyboard in Resources */,
@@ -250,6 +262,7 @@
 			files = (
 				DBB6211D1F11273F00DC32DF /* SubmitViewController.swift in Sources */,
 				DBB621191F11270E00DC32DF /* HomeViewController.swift in Sources */,
+				DB83C2B91F1514A500C196B7 /* ProgressHUD.m in Sources */,
 				DBB6211F1F11274900DC32DF /* StatsViewController.swift in Sources */,
 				DBB621021F111F2500DC32DF /* ViewController.swift in Sources */,
 				DBB621001F111F2500DC32DF /* AppDelegate.swift in Sources */,
@@ -374,10 +387,13 @@
 			baseConfigurationReference = 9F60F988AA9F9E914C3FE76C /* Pods-Palooka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Palooka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.za.sdcapital.Palooka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Palooka/Palooka-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -387,10 +403,12 @@
 			baseConfigurationReference = 32F424FB08293EC210271D8E /* Pods-Palooka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Palooka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.za.sdcapital.Palooka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Palooka/Palooka-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

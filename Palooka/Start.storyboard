@@ -169,7 +169,6 @@
                                         </state>
                                         <connections>
                                             <action selector="signUpBtn_TouchUpInside:" destination="09U-Ru-3rO" eventType="touchUpInside" id="Dfh-Vi-1C9"/>
-                                            <segue destination="oGc-mM-Y9y" kind="presentation" id="s39-is-BLm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -216,6 +215,7 @@
                         <outlet property="emailTextField" destination="Fyf-Xy-SXC" id="fex-8B-y1F"/>
                         <outlet property="passwordTextField" destination="Fsb-ml-plH" id="XJM-s4-38Q"/>
                         <outlet property="profileImage" destination="42s-VZ-ETr" id="3pW-qq-FWF"/>
+                        <outlet property="signUpButton" destination="Ujh-b8-7Bf" id="o4p-sh-kjc"/>
                         <outlet property="usernameTextField" destination="gFu-sB-boc" id="BLQ-BO-q3L"/>
                     </connections>
                 </viewController>
@@ -236,7 +236,4 @@
         <image name="image" width="750" height="1334"/>
         <image name="placeholderImg" width="225" height="225"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="s39-is-BLm"/>
-    </inferredMetricsTieBreakers>
 </document>
