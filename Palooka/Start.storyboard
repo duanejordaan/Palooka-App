@@ -58,7 +58,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="oGc-mM-Y9y" kind="presentation" id="RIl-kh-jgR"/>
+                                            <action selector="signInButton_TouchUpInside:" destination="zFW-g9-ikl" eventType="touchUpInside" id="pYb-OE-Vjq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -104,11 +104,13 @@
                     <connections>
                         <outlet property="emailTextField" destination="gtC-Yw-DE7" id="k8N-eN-XGI"/>
                         <outlet property="passwordTextField" destination="3nA-sr-BnG" id="ZcU-Tb-TbJ"/>
+                        <outlet property="signInButton" destination="OUA-gG-mrU" id="YgG-fX-BxV"/>
+                        <segue destination="oGc-mM-Y9y" kind="presentation" identifier="signInToTabbarVC" id="axm-YW-Y8n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfj-pc-9UA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567.20000000000005" y="-91.304347826086968"/>
+            <point key="canvasLocation" x="-567" y="-77"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Cne-Sy-0WR">
@@ -217,6 +219,7 @@
                         <outlet property="profileImage" destination="42s-VZ-ETr" id="3pW-qq-FWF"/>
                         <outlet property="signUpButton" destination="Ujh-b8-7Bf" id="o4p-sh-kjc"/>
                         <outlet property="usernameTextField" destination="gFu-sB-boc" id="BLQ-BO-q3L"/>
+                        <segue destination="oGc-mM-Y9y" kind="presentation" identifier="signUpToTabbarVC" id="hOM-vH-auh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Xp-Xx-Vb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -236,4 +239,7 @@
         <image name="image" width="750" height="1334"/>
         <image name="placeholderImg" width="225" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="axm-YW-Y8n"/>
+    </inferredMetricsTieBreakers>
 </document>
