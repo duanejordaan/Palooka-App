@@ -12,7 +12,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="oAr-Br-GQg">
             <objects>
-                <viewController id="zFW-g9-ikl" customClass="SignInViewController" customModule="Palooka" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zFW-g9-ikl" customClass="SignInViewController" customModule="Palooka" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y6M-7l-Glp"/>
                         <viewControllerLayoutGuide type="bottom" id="gYq-mK-EHC"/>

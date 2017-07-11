@@ -98,7 +98,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="E5t-DZ-j2o"/>
+                    <navigationItem key="navigationItem" id="E5t-DZ-j2o">
+                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="y2g-y7-Neg">
+                            <connections>
+                                <action selector="logout_TouchUpInside:" destination="LjT-Ui-yCt" id="Lpl-1c-okk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljB-N9-CSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
