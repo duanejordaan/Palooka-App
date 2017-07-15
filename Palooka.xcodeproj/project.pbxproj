@@ -24,6 +24,8 @@
 		DBB6211D1F11273F00DC32DF /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6211C1F11273F00DC32DF /* SubmitViewController.swift */; };
 		DBB6211F1F11274900DC32DF /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6211E1F11274900DC32DF /* StatsViewController.swift */; };
 		DBB621211F11275900DC32DF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB621201F11275900DC32DF /* ProfileViewController.swift */; };
+		DBEFF2711F1A58D200E7EA5B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFF2701F1A58D200E7EA5B /* AuthService.swift */; };
+		DBEFF2731F1A58F600E7EA5B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFF2721F1A58F600E7EA5B /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		DBB6211C1F11273F00DC32DF /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 		DBB6211E1F11274900DC32DF /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		DBB621201F11275900DC32DF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DBEFF2701F1A58D200E7EA5B /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		DBEFF2721F1A58F600E7EA5B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				DBB620FF1F111F2500DC32DF /* AppDelegate.swift */,
+				DBEFF2701F1A58D200E7EA5B /* AuthService.swift */,
+				DBEFF2721F1A58F600E7EA5B /* Config.swift */,
 				DBB621171F11207600DC32DF /* View Controllers */,
 				DBB621011F111F2500DC32DF /* ViewController.swift */,
 				DBB621061F111F2500DC32DF /* Assets.xcassets */,
@@ -265,6 +271,8 @@
 				DB83C2B91F1514A500C196B7 /* ProgressHUD.m in Sources */,
 				DBB6211F1F11274900DC32DF /* StatsViewController.swift in Sources */,
 				DBB621021F111F2500DC32DF /* ViewController.swift in Sources */,
+				DBEFF2731F1A58F600E7EA5B /* Config.swift in Sources */,
+				DBEFF2711F1A58D200E7EA5B /* AuthService.swift in Sources */,
 				DBB621001F111F2500DC32DF /* AppDelegate.swift in Sources */,
 				DBB621161F11207000DC32DF /* SignUpViewController.swift in Sources */,
 				DBB621211F11275900DC32DF /* ProfileViewController.swift in Sources */,

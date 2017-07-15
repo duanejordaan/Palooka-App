@@ -18,6 +18,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        signInButton.isEnabled = false
         handleTextField()
     }
     
@@ -49,12 +50,12 @@ class SignInViewController: UIViewController {
     
     
     @IBAction func signInButton_TouchUpInside(_ sender: Any) {
-        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
+        AuthService.signIn(email: emailTextField.text!, password: passwordTextField.text!, onSuccess: {
             self.performSegue(withIdentifier: "signInToTabbarVC", sender: nil)
+            
+        }, onError: { error in
+            print(error!)
+            ProgressHUD.showError("Incorrect login details")
         })
     }
 
