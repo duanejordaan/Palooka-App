@@ -37,6 +37,11 @@ class SignUpViewController: UIViewController {
         handleTextField()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    
     func handleTextField() {
         usernameTextField.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
         emailTextField.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
@@ -70,8 +75,11 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpBtn_TouchUpInside(_ sender: Any) {
+        view.endEditing(true)
+        ProgressHUD.show("Waiting...", interaction: false)
         if let profileImg = self.selectedImage, let imageData = UIImageJPEGRepresentation(profileImg, 0.1) {
             AuthService.signUp(username: usernameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!, imageData: imageData, onSuccess: {
+                ProgressHUD.showSuccess("Success")
                 self.performSegue(withIdentifier: "signUpToTabbarVC", sender: nil)
             }, onError: { (errorString) in
                 print(errorString!)

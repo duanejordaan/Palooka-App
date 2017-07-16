@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TyJ-mi-xeo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Submit Score-->
+        <scene sceneID="noh-Hq-qfP">
+            <objects>
+                <viewController title="Submit Score" id="5DU-pw-5C6" customClass="SubmitViewController" customModule="Palooka" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0HG-fv-Kw9"/>
+                        <viewControllerLayoutGuide type="bottom" id="HF5-LR-OG3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MbZ-lP-qcw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhV-T5-3hl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="333"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3tb-4a-ofZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="225" id="2Eu-3o-pCE"/>
+                                            <constraint firstAttribute="width" constant="375" id="Iwr-Zu-sHr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2w2-Pq-htG">
+                                        <rect key="frame" x="8" y="233" width="359" height="92"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoalbum" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Ih-LAP">
+                                        <rect key="frame" x="155" y="80" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="G7p-04-hpQ"/>
+                                            <constraint firstAttribute="height" constant="64" id="LdL-ds-Dlm"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3tb-4a-ofZ" firstAttribute="leading" secondItem="AhV-T5-3hl" secondAttribute="leading" id="5VO-z7-uQF"/>
+                                    <constraint firstAttribute="trailing" secondItem="2w2-Pq-htG" secondAttribute="trailing" constant="8" id="75u-Jp-E4C"/>
+                                    <constraint firstItem="3tb-4a-ofZ" firstAttribute="top" secondItem="AhV-T5-3hl" secondAttribute="top" id="NcD-eC-C6T"/>
+                                    <constraint firstItem="grK-Ih-LAP" firstAttribute="leading" secondItem="AhV-T5-3hl" secondAttribute="leading" constant="155" id="Ojz-VC-uht"/>
+                                    <constraint firstAttribute="trailing" secondItem="3tb-4a-ofZ" secondAttribute="trailing" id="RkW-5u-K1q"/>
+                                    <constraint firstAttribute="trailing" secondItem="grK-Ih-LAP" secondAttribute="trailing" constant="156" id="VD0-mm-FMI"/>
+                                    <constraint firstItem="grK-Ih-LAP" firstAttribute="centerY" secondItem="3tb-4a-ofZ" secondAttribute="centerY" id="dCj-SY-DiM"/>
+                                    <constraint firstAttribute="height" constant="333" id="fu3-bB-Z2q"/>
+                                    <constraint firstItem="2w2-Pq-htG" firstAttribute="top" secondItem="3tb-4a-ofZ" secondAttribute="bottom" constant="8" id="l3b-wf-h4Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="2w2-Pq-htG" secondAttribute="bottom" constant="8" id="paa-jY-Qaj"/>
+                                    <constraint firstItem="2w2-Pq-htG" firstAttribute="leading" secondItem="AhV-T5-3hl" secondAttribute="leading" constant="8" id="qnc-s5-2bS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9h-NG-3Bn">
+                                <rect key="frame" x="24" y="560" width="327" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.59607843140000005" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="H3O-Ck-dXa"/>
+                                </constraints>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AhV-T5-3hl" firstAttribute="top" secondItem="0HG-fv-Kw9" secondAttribute="bottom" id="2i0-kt-p2S"/>
+                            <constraint firstAttribute="trailing" secondItem="AhV-T5-3hl" secondAttribute="trailing" id="7jU-Mv-O0t"/>
+                            <constraint firstItem="HF5-LR-OG3" firstAttribute="top" secondItem="Y9h-NG-3Bn" secondAttribute="bottom" constant="8" id="V0j-MY-qJE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y9h-NG-3Bn" secondAttribute="trailing" constant="8" id="cUN-KC-SrG"/>
+                            <constraint firstItem="Y9h-NG-3Bn" firstAttribute="leading" secondItem="MbZ-lP-qcw" secondAttribute="leadingMargin" constant="8" id="dfx-cX-yQi"/>
+                            <constraint firstItem="AhV-T5-3hl" firstAttribute="leading" secondItem="MbZ-lP-qcw" secondAttribute="leading" id="iMq-g2-sXp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Submit Score" id="ob7-h0-6HK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10u-Bz-xGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5999999999999" y="314.39280359820094"/>
+        </scene>
+        <!--Submit Score-->
+        <scene sceneID="Dfm-gD-crS">
+            <objects>
+                <navigationController title="Submit Score" automaticallyAdjustsScrollViewInsets="NO" id="TyJ-mi-xeo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Photo" id="Xw9-vW-NV5">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7FL-Ur-KRp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5DU-pw-5C6" kind="relationship" relationship="rootViewController" id="o8r-G3-A1U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgz-ob-Sw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="-478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Photo" width="22" height="23"/>
+        <image name="photoalbum" width="64" height="64"/>
+    </resources>
+</document>

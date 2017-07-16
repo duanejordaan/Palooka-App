@@ -26,6 +26,11 @@
 		DBB621211F11275900DC32DF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB621201F11275900DC32DF /* ProfileViewController.swift */; };
 		DBEFF2711F1A58D200E7EA5B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFF2701F1A58D200E7EA5B /* AuthService.swift */; };
 		DBEFF2731F1A58F600E7EA5B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFF2721F1A58F600E7EA5B /* Config.swift */; };
+		DBEFF2751F1B983800E7EA5B /* submit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEFF2741F1B983800E7EA5B /* submit.storyboard */; };
+		DBEFF2771F1B985500E7EA5B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEFF2761F1B985500E7EA5B /* Home.storyboard */; };
+		DBEFF2791F1B986B00E7EA5B /* Leaderboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEFF2781F1B986B00E7EA5B /* Leaderboard.storyboard */; };
+		DBEFF27B1F1B987900E7EA5B /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEFF27A1F1B987900E7EA5B /* Stats.storyboard */; };
+		DBEFF27D1F1B988600E7EA5B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEFF27C1F1B988600E7EA5B /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +59,11 @@
 		DBB621201F11275900DC32DF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DBEFF2701F1A58D200E7EA5B /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		DBEFF2721F1A58F600E7EA5B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		DBEFF2741F1B983800E7EA5B /* submit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = submit.storyboard; sourceTree = "<group>"; };
+		DBEFF2761F1B985500E7EA5B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		DBEFF2781F1B986B00E7EA5B /* Leaderboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Leaderboard.storyboard; sourceTree = "<group>"; };
+		DBEFF27A1F1B987900E7EA5B /* Stats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
+		DBEFF27C1F1B988600E7EA5B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,11 @@
 				DBB6210B1F111F2500DC32DF /* Info.plist */,
 				DBB621111F111F5000DC32DF /* Start.storyboard */,
 				DBB1FA1C1F135BB000781F05 /* Main.storyboard */,
+				DBEFF27C1F1B988600E7EA5B /* Profile.storyboard */,
+				DBEFF27A1F1B987900E7EA5B /* Stats.storyboard */,
+				DBEFF2781F1B986B00E7EA5B /* Leaderboard.storyboard */,
+				DBEFF2761F1B985500E7EA5B /* Home.storyboard */,
+				DBEFF2741F1B983800E7EA5B /* submit.storyboard */,
 				DBB1FA1E1F1365C600781F05 /* GoogleService-Info.plist */,
 				DB83C2B51F1514A500C196B7 /* ProgressHUD.bundle */,
 				DB83C2B61F1514A500C196B7 /* ProgressHUD.h */,
@@ -202,12 +217,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEFF2791F1B986B00E7EA5B /* Leaderboard.storyboard in Resources */,
+				DBEFF27D1F1B988600E7EA5B /* Profile.storyboard in Resources */,
 				DBB6210A1F111F2500DC32DF /* LaunchScreen.storyboard in Resources */,
+				DBEFF27B1F1B987900E7EA5B /* Stats.storyboard in Resources */,
 				DBB621071F111F2500DC32DF /* Assets.xcassets in Resources */,
 				DB83C2B81F1514A500C196B7 /* ProgressHUD.bundle in Resources */,
+				DBEFF2751F1B983800E7EA5B /* submit.storyboard in Resources */,
 				DBB1FA1F1F1365C600781F05 /* GoogleService-Info.plist in Resources */,
 				DBB621121F111F5000DC32DF /* Start.storyboard in Resources */,
 				DBB1FA1D1F135BB000781F05 /* Main.storyboard in Resources */,
+				DBEFF2771F1B985500E7EA5B /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
