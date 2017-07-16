@@ -22,8 +22,15 @@ class HomeViewController: UIViewController {
     
     func loadPosts() {
         Database.database().reference().child("posts").observe(.childAdded) { (snapshot: DataSnapshot) in
-            print(snapshot.value!)
-        }
+            print(Thread.isMainThread)
+            if let dict = snapshot.value as? [String: Any] {
+                let captionText = dict["caption"] as! String
+                let photoUrlString = dict["photoUrl"] as! String
+                let post = Post(captionText: captionText, photoUrlString: photoUrlString)
+                self.posts.append(post)
+                print(self.posts)
+                self.tableView.reloadData()        }
+    }
     }
     
     @IBAction func logout_TouchUpInside(_ sender: Any) {
@@ -42,12 +49,11 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return posts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
-        cell.textLabel?.text = "\(indexPath.row)"
-        cell.backgroundColor = UIColor.red
+        cell.textLabel?.text = posts[indexPath.row].caption
         return cell
     }
 }
