@@ -120,17 +120,10 @@
 				DBEFF2701F1A58D200E7EA5B /* AuthService.swift */,
 				DBEFF2721F1A58F600E7EA5B /* Config.swift */,
 				DBB621171F11207600DC32DF /* View Controllers */,
+				DBEFF27E1F1B9E2E00E7EA5B /* Storyboards */,
 				DBB621011F111F2500DC32DF /* ViewController.swift */,
 				DBB621061F111F2500DC32DF /* Assets.xcassets */,
-				DBB621081F111F2500DC32DF /* LaunchScreen.storyboard */,
 				DBB6210B1F111F2500DC32DF /* Info.plist */,
-				DBB621111F111F5000DC32DF /* Start.storyboard */,
-				DBB1FA1C1F135BB000781F05 /* Main.storyboard */,
-				DBEFF27C1F1B988600E7EA5B /* Profile.storyboard */,
-				DBEFF27A1F1B987900E7EA5B /* Stats.storyboard */,
-				DBEFF2781F1B986B00E7EA5B /* Leaderboard.storyboard */,
-				DBEFF2761F1B985500E7EA5B /* Home.storyboard */,
-				DBEFF2741F1B983800E7EA5B /* submit.storyboard */,
 				DBB1FA1E1F1365C600781F05 /* GoogleService-Info.plist */,
 				DB83C2B51F1514A500C196B7 /* ProgressHUD.bundle */,
 				DB83C2B61F1514A500C196B7 /* ProgressHUD.h */,
@@ -152,6 +145,21 @@
 				DBB621201F11275900DC32DF /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DBEFF27E1F1B9E2E00E7EA5B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DBEFF2761F1B985500E7EA5B /* Home.storyboard */,
+				DBEFF2781F1B986B00E7EA5B /* Leaderboard.storyboard */,
+				DBEFF2741F1B983800E7EA5B /* submit.storyboard */,
+				DBEFF27A1F1B987900E7EA5B /* Stats.storyboard */,
+				DBEFF27C1F1B988600E7EA5B /* Profile.storyboard */,
+				DBB1FA1C1F135BB000781F05 /* Main.storyboard */,
+				DBB621111F111F5000DC32DF /* Start.storyboard */,
+				DBB621081F111F2500DC32DF /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
