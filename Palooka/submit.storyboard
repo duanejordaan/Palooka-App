@@ -25,11 +25,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhV-T5-3hl">
                                 <rect key="frame" x="0.0" y="64" width="375" height="333"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3tb-4a-ofZ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3tb-4a-ofZ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="225" id="2Eu-3o-pCE"/>
-                                            <constraint firstAttribute="width" constant="375" id="Iwr-Zu-sHr"/>
+                                            <constraint firstAttribute="height" constant="225" id="INR-r4-uuS"/>
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2w2-Pq-htG">
@@ -48,16 +47,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="3tb-4a-ofZ" firstAttribute="leading" secondItem="AhV-T5-3hl" secondAttribute="leading" id="5VO-z7-uQF"/>
                                     <constraint firstAttribute="trailing" secondItem="2w2-Pq-htG" secondAttribute="trailing" constant="8" id="75u-Jp-E4C"/>
-                                    <constraint firstItem="3tb-4a-ofZ" firstAttribute="top" secondItem="AhV-T5-3hl" secondAttribute="top" id="NcD-eC-C6T"/>
+                                    <constraint firstItem="3tb-4a-ofZ" firstAttribute="centerY" secondItem="grK-Ih-LAP" secondAttribute="centerY" id="9mq-JP-TpH"/>
+                                    <constraint firstItem="3tb-4a-ofZ" firstAttribute="top" secondItem="AhV-T5-3hl" secondAttribute="top" id="A60-oN-diE"/>
+                                    <constraint firstItem="2w2-Pq-htG" firstAttribute="top" secondItem="3tb-4a-ofZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Awn-Wq-1RZ"/>
                                     <constraint firstItem="grK-Ih-LAP" firstAttribute="leading" secondItem="AhV-T5-3hl" secondAttribute="leading" constant="155" id="Ojz-VC-uht"/>
-                                    <constraint firstAttribute="trailing" secondItem="3tb-4a-ofZ" secondAttribute="trailing" id="RkW-5u-K1q"/>
                                     <constraint firstAttribute="trailing" secondItem="grK-Ih-LAP" secondAttribute="trailing" constant="156" id="VD0-mm-FMI"/>
-                                    <constraint firstItem="grK-Ih-LAP" firstAttribute="centerY" secondItem="3tb-4a-ofZ" secondAttribute="centerY" id="dCj-SY-DiM"/>
                                     <constraint firstAttribute="height" constant="333" id="fu3-bB-Z2q"/>
-                                    <constraint firstItem="2w2-Pq-htG" firstAttribute="top" secondItem="3tb-4a-ofZ" secondAttribute="bottom" constant="8" id="l3b-wf-h4Q"/>
+                                    <constraint firstItem="3tb-4a-ofZ" firstAttribute="leading" secondItem="AhV-T5-3hl" secondAttribute="leading" id="kE2-gK-jLP"/>
                                     <constraint firstAttribute="bottom" secondItem="2w2-Pq-htG" secondAttribute="bottom" constant="8" id="paa-jY-Qaj"/>
+                                    <constraint firstItem="3tb-4a-ofZ" firstAttribute="centerX" secondItem="grK-Ih-LAP" secondAttribute="centerX" id="qIR-lM-Q89"/>
                                     <constraint firstItem="2w2-Pq-htG" firstAttribute="leading" secondItem="AhV-T5-3hl" secondAttribute="leading" constant="8" id="qnc-s5-2bS"/>
                                 </constraints>
                             </view>
