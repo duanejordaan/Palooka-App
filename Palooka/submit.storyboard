@@ -85,11 +85,18 @@
                             <constraint firstItem="AhV-T5-3hl" firstAttribute="leading" secondItem="MbZ-lP-qcw" secondAttribute="leading" id="iMq-g2-sXp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Submit Score" id="ob7-h0-6HK"/>
+                    <navigationItem key="navigationItem" title="Submit Score" id="ob7-h0-6HK">
+                        <barButtonItem key="leftBarButtonItem" title="Remove" id="Hel-n1-Oa5">
+                            <connections>
+                                <action selector="remove_TouchUpInside:" destination="5DU-pw-5C6" id="3P2-lu-CKO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="captionTextView" destination="2w2-Pq-htG" id="W33-vU-3Us"/>
                         <outlet property="photo" destination="3tb-4a-ofZ" id="cGR-a5-bIc"/>
                         <outlet property="photoAlbum" destination="grK-Ih-LAP" id="iLw-Fg-3rH"/>
+                        <outlet property="removeButton" destination="Hel-n1-Oa5" id="Z6b-XC-GQM"/>
                         <outlet property="submitButton" destination="Y9h-NG-3Bn" id="Rxj-eK-p8f"/>
                     </connections>
                 </viewController>

@@ -15,6 +15,8 @@ class SubmitViewController: UIViewController {
     @IBOutlet weak var captionTextView: UITextView!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var photoAlbum: UIImageView!
+    @IBOutlet weak var removeButton: UIBarButtonItem!
+    
     
     var selectedImage: UIImage?
     
@@ -27,13 +29,48 @@ class SubmitViewController: UIViewController {
         photo.isUserInteractionEnabled = true
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        handlePost()
+    }
+    
+    func handlePost() {
+        if selectedImage != nil {
+            self.submitButton.isEnabled = true
+            self.removeButton.isEnabled = true
+            self.submitButton.backgroundColor = UIColor(red: 0.0/255.0, green: 152.0/255.0, blue: 103.0/255.0,
+                                                        alpha: 1.0)
+        } else {
+            self.submitButton.isEnabled = false
+            self.removeButton.isEnabled = false
+            self.submitButton.backgroundColor = .lightGray
+            
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    
     func handleSelectPhoto() {
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
         present(pickerController, animated: true, completion: nil)
         photoAlbum.isHidden = true
     }
-        
+    
+    func clean() {
+        self.captionTextView.text = ""
+        self.photo.image = UIImage(named: "placeholder-photo")
+        self.photoAlbum.isHidden = false
+        self.selectedImage = nil
+    }
+    
+    @IBAction func remove_TouchUpInside(_ sender: Any) {
+        clean()
+        handlePost()
+    }
 
     @IBAction func submitButton_TouchUpInside(_ sender: Any) {
         ProgressHUD.show("Waiting...", interaction: false)
@@ -66,6 +103,8 @@ class SubmitViewController: UIViewController {
                 return
             }
             ProgressHUD.showSuccess("Success")
+            self.clean()
+            self.tabBarController?.selectedIndex = 0
         })
     }
     
