@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n3p-RF-i1g">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,30 +20,54 @@
                     <view key="view" contentMode="scaleToFill" id="U0n-hg-5Xi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rRs-bl-sOE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" id="EBT-2T-is9">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EBT-2T-is9" id="t81-2B-jJj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rRs-bl-sOE" firstAttribute="leading" secondItem="U0n-hg-5Xi" secondAttribute="leading" id="A7a-xq-VGe"/>
+                            <constraint firstAttribute="bottom" secondItem="rRs-bl-sOE" secondAttribute="bottom" id="BNG-nz-yij"/>
+                            <constraint firstItem="rRs-bl-sOE" firstAttribute="top" secondItem="U0n-hg-5Xi" secondAttribute="top" id="DnV-0M-vRG"/>
+                            <constraint firstAttribute="trailing" secondItem="rRs-bl-sOE" secondAttribute="trailing" id="Ep3-Uk-63r"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="E5t-DZ-j2o">
+                    <navigationItem key="navigationItem" title="Home" id="E5t-DZ-j2o">
                         <barButtonItem key="leftBarButtonItem" title="LogOut" id="y2g-y7-Neg">
                             <connections>
                                 <action selector="logout_TouchUpInside:" destination="LjT-Ui-yCt" id="Lpl-1c-okk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="rRs-bl-sOE" id="YwI-sZ-tkA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljB-N9-CSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-626" y="316"/>
+            <point key="canvasLocation" x="-626.39999999999998" y="315.29235382308849"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="icn-ey-BMu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n3p-RF-i1g" sceneMemberID="viewController">
+                <navigationController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="n3p-RF-i1g" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Home" selectedImage="Home_Selected" id="9Bm-2O-V4w">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Nf-fy-3JM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -31,6 +31,7 @@
 		DBEFF2791F1B986B00E7EA5B /* Leaderboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEFF2781F1B986B00E7EA5B /* Leaderboard.storyboard */; };
 		DBEFF27B1F1B987900E7EA5B /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEFF27A1F1B987900E7EA5B /* Stats.storyboard */; };
 		DBEFF27D1F1B988600E7EA5B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEFF27C1F1B988600E7EA5B /* Profile.storyboard */; };
+		DBEFF2831F1BED6500E7EA5B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFF2821F1BED6500E7EA5B /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		DBEFF2781F1B986B00E7EA5B /* Leaderboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Leaderboard.storyboard; sourceTree = "<group>"; };
 		DBEFF27A1F1B987900E7EA5B /* Stats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
 		DBEFF27C1F1B988600E7EA5B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		DBEFF2821F1BED6500E7EA5B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				DBB620FF1F111F2500DC32DF /* AppDelegate.swift */,
 				DBEFF2701F1A58D200E7EA5B /* AuthService.swift */,
 				DBEFF2721F1A58F600E7EA5B /* Config.swift */,
+				DBEFF27F1F1BED3600E7EA5B /* Model */,
 				DBB621171F11207600DC32DF /* View Controllers */,
 				DBEFF27E1F1B9E2E00E7EA5B /* Storyboards */,
 				DBB621011F111F2500DC32DF /* ViewController.swift */,
@@ -160,6 +163,14 @@
 				DBB621081F111F2500DC32DF /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		DBEFF27F1F1BED3600E7EA5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBEFF2821F1BED6500E7EA5B /* Post.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				DBB621191F11270E00DC32DF /* HomeViewController.swift in Sources */,
 				DB83C2B91F1514A500C196B7 /* ProgressHUD.m in Sources */,
 				DBB6211F1F11274900DC32DF /* StatsViewController.swift in Sources */,
+				DBEFF2831F1BED6500E7EA5B /* Post.swift in Sources */,
 				DBB621021F111F2500DC32DF /* ViewController.swift in Sources */,
 				DBEFF2731F1A58F600E7EA5B /* Config.swift in Sources */,
 				DBEFF2711F1A58D200E7EA5B /* AuthService.swift in Sources */,
