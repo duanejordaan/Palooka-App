@@ -24,12 +24,10 @@ class HomeViewController: UIViewController {
         Database.database().reference().child("posts").observe(.childAdded) { (snapshot: DataSnapshot) in
             print(Thread.isMainThread)
             if let dict = snapshot.value as? [String: Any] {
-                let captionText = dict["caption"] as! String
-                let photoUrlString = dict["photoUrl"] as! String
-                let post = Post(captionText: captionText, photoUrlString: photoUrlString)
-                self.posts.append(post)
-                print(self.posts)
-                self.tableView.reloadData()        }
+                let newPost = Post.transformPostPhoto(dict: dict)
+                self.posts.append(newPost)
+                self.tableView.reloadData()
+            }
     }
     }
     
