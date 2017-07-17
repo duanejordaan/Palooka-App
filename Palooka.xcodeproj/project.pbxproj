@@ -32,6 +32,7 @@
 		DBEFF27B1F1B987900E7EA5B /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEFF27A1F1B987900E7EA5B /* Stats.storyboard */; };
 		DBEFF27D1F1B988600E7EA5B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEFF27C1F1B988600E7EA5B /* Profile.storyboard */; };
 		DBEFF2831F1BED6500E7EA5B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFF2821F1BED6500E7EA5B /* Post.swift */; };
+		DBEFF2851F1CE46400E7EA5B /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFF2841F1CE46400E7EA5B /* HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		DBEFF27A1F1B987900E7EA5B /* Stats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
 		DBEFF27C1F1B988600E7EA5B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		DBEFF2821F1BED6500E7EA5B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DBEFF2841F1CE46400E7EA5B /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		DBB620FE1F111F2500DC32DF /* Palooka */ = {
 			isa = PBXGroup;
 			children = (
+				DBEFF2861F1CE46B00E7EA5B /* Views */,
 				DBB620FF1F111F2500DC32DF /* AppDelegate.swift */,
 				DBEFF2701F1A58D200E7EA5B /* AuthService.swift */,
 				DBEFF2721F1A58F600E7EA5B /* Config.swift */,
@@ -171,6 +174,14 @@
 				DBEFF2821F1BED6500E7EA5B /* Post.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		DBEFF2861F1CE46B00E7EA5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBEFF2841F1CE46400E7EA5B /* HomeTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 			files = (
 				DBB6211D1F11273F00DC32DF /* SubmitViewController.swift in Sources */,
 				DBB621191F11270E00DC32DF /* HomeViewController.swift in Sources */,
+				DBEFF2851F1CE46400E7EA5B /* HomeTableViewCell.swift in Sources */,
 				DB83C2B91F1514A500C196B7 /* ProgressHUD.m in Sources */,
 				DBB6211F1F11274900DC32DF /* StatsViewController.swift in Sources */,
 				DBEFF2831F1BED6500E7EA5B /* Post.swift in Sources */,

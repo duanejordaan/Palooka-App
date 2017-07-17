@@ -50,8 +50,12 @@ extension HomeViewController: UITableViewDataSource {
         return posts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
-        cell.textLabel?.text = posts[indexPath.row].caption
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! HomeTableViewCell
+        cell.profileImageView.image = UIImage(named: "photo3.jpg")
+        cell.nameLabel.text = "Duane"
+        cell.postImageView.image = UIImage(named: "photo2.jpg")
+        cell.captionLabel.text = "Short textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort text"
+        //cell.textLabel?.text = posts[indexPath.row].caption
         return cell
     }
 }
