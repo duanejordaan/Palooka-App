@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import SDWebImage
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -16,8 +17,10 @@ class HomeViewController: UIViewController {
      var posts = [Post]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.estimatedRowHeight = 521
+        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.dataSource = self
-         loadPosts()
+        loadPosts()
     }
     
     func loadPosts() {
@@ -51,11 +54,9 @@ extension HomeViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! HomeTableViewCell
-        cell.profileImageView.image = UIImage(named: "photo3.jpg")
-        cell.nameLabel.text = "Duane"
-        cell.postImageView.image = UIImage(named: "photo2.jpg")
-        cell.captionLabel.text = "Short textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort textShort text"
-        //cell.textLabel?.text = posts[indexPath.row].caption
+        let post = posts[indexPath.row]
+        cell.post = post
         return cell
+
     }
 }

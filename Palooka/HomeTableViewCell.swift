@@ -20,7 +20,22 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var captionLabel: UILabel!
     
     
+    var post: Post? {
+        didSet {
+            updateView()
+        }
+    }
     
+    func updateView() {
+        captionLabel.text = post?.caption
+        profileImageView.image = UIImage(named: "photo3.jpeg")
+        nameLabel.text = "Duane"
+        if let photoUrlString = post?.photoUrl {
+            let photoUrl = URL(string: photoUrlString)
+            postImageView.sd_setImage(with: photoUrl)
+        }
+        
+    }
     
     
     
