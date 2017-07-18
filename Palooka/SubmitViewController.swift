@@ -16,7 +16,17 @@ class SubmitViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var photoAlbum: UIImageView!
     @IBOutlet weak var removeButton: UIBarButtonItem!
+    @IBOutlet weak var courseName: UITextField!
+    @IBOutlet weak var gross: UITextField!
+    @IBOutlet weak var score: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    var dateTimeInterval: TimeInterval = 0
     
+    
+    @IBAction func datePicked(_ sender: Any) {
+        dateTimeInterval = datePicker.date.timeIntervalSinceNow
+     //   ref.setValue["date": dateTimeInterval]
+    }
     
     var selectedImage: UIImage?
     
@@ -65,6 +75,7 @@ class SubmitViewController: UIViewController {
         self.photo.image = UIImage(named: "placeholder-photo")
         self.photoAlbum.isHidden = false
         self.selectedImage = nil
+        self.courseName.text = ""
     }
     
     @IBAction func remove_TouchUpInside(_ sender: Any) {
@@ -96,7 +107,7 @@ class SubmitViewController: UIViewController {
         let postsReference = ref.child("posts")
         let newPostId = postsReference.childByAutoId().key
         let newPostReference = postsReference.child(newPostId)
-        newPostReference.setValue(["photoUrl": photoUrl, "caption": captionTextView.text!], withCompletionBlock: {
+        newPostReference.setValue(["photoUrl": photoUrl, "caption": captionTextView.text!, "courseName": courseName.text!, "date": dateTimeInterval ,"gross": gross.text!, "score": score.text!], withCompletionBlock: {
             (error, ref) in
             if error != nil {
                 ProgressHUD.showError(error!.localizedDescription)

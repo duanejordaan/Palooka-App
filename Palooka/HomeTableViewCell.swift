@@ -18,6 +18,9 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var shareImageView: UIImageView!
     @IBOutlet weak var likeCountButton: UIButton!
     @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var courseName: UILabel!
+    @IBOutlet weak var gross: UILabel!
+    @IBOutlet weak var score: UILabel!
     
     
     var post: Post? {
@@ -27,6 +30,9 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     func updateView() {
+        gross.text = post?.gross
+        score.text = post?.score
+        courseName.text = post?.courseName
         captionLabel.text = post?.caption
         profileImageView.image = UIImage(named: "photo3.jpeg")
         nameLabel.text = "Duane"

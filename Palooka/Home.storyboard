@@ -123,14 +123,35 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grossscore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hu1-X5-O5h">
+                                                    <rect key="frame" x="257" y="99" width="60" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="3HV-d7-GtS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-4p-8wi">
+                                                    <rect key="frame" x="257" y="121.5" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="5RM-RT-hLN"/>
+                                                        <constraint firstAttribute="height" constant="30" id="jx0-Lj-qJZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="mZM-eK-0gu" firstAttribute="top" secondItem="i1M-pv-ay8" secondAttribute="bottom" constant="18" id="6QI-e7-lZA"/>
                                                 <constraint firstItem="Pha-wF-dyp" firstAttribute="top" secondItem="t81-2B-jJj" secondAttribute="topMargin" constant="59" id="7Cb-TB-9zK"/>
                                                 <constraint firstItem="3eF-ez-dom" firstAttribute="top" secondItem="Pha-wF-dyp" secondAttribute="bottom" constant="7" id="7tp-D6-qwr"/>
+                                                <constraint firstItem="5IW-4p-8wi" firstAttribute="centerY" secondItem="Zm8-BT-hci" secondAttribute="centerY" id="90l-kY-rRT"/>
                                                 <constraint firstItem="7Yg-zn-8Js" firstAttribute="leading" secondItem="t81-2B-jJj" secondAttribute="leadingMargin" constant="15" id="D46-gk-mbq"/>
                                                 <constraint firstItem="3eF-ez-dom" firstAttribute="leading" secondItem="mZM-eK-0gu" secondAttribute="trailing" constant="15" id="GOW-je-rcU"/>
                                                 <constraint firstItem="6BK-l6-CvY" firstAttribute="leading" secondItem="t81-2B-jJj" secondAttribute="leadingMargin" constant="15" id="Hb1-S5-oXH"/>
+                                                <constraint firstItem="Hu1-X5-O5h" firstAttribute="centerY" secondItem="3eF-ez-dom" secondAttribute="centerY" id="JhF-fP-BQL"/>
                                                 <constraint firstItem="Zm8-BT-hci" firstAttribute="top" secondItem="3eF-ez-dom" secondAttribute="bottom" constant="8" symbolic="YES" id="K2q-VF-bH9"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="oH9-Kh-DOi" secondAttribute="bottom" constant="35" id="NGH-52-q8M"/>
                                                 <constraint firstItem="i1M-pv-ay8" firstAttribute="leading" secondItem="7Yg-zn-8Js" secondAttribute="trailing" constant="8" id="O7S-os-KRw"/>
@@ -140,6 +161,7 @@
                                                 <constraint firstItem="y0i-Ax-2yJ" firstAttribute="leading" secondItem="6BK-l6-CvY" secondAttribute="trailing" constant="47" id="RLc-Yy-Ya3"/>
                                                 <constraint firstItem="bqB-tO-Fwl" firstAttribute="width" secondItem="6BK-l6-CvY" secondAttribute="width" id="Tdn-JX-7In"/>
                                                 <constraint firstItem="6BK-l6-CvY" firstAttribute="top" secondItem="mZM-eK-0gu" secondAttribute="bottom" constant="15" id="YG7-X6-rlW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Hu1-X5-O5h" secondAttribute="trailing" constant="50" id="YtG-c2-Pwx"/>
                                                 <constraint firstItem="bqB-tO-Fwl" firstAttribute="leading" secondItem="6BK-l6-CvY" secondAttribute="trailing" constant="13" id="ZCN-8W-pZm"/>
                                                 <constraint firstItem="y0i-Ax-2yJ" firstAttribute="height" secondItem="6BK-l6-CvY" secondAttribute="height" id="c7B-Kh-NSd"/>
                                                 <constraint firstItem="JPU-Bi-na0" firstAttribute="leading" secondItem="t81-2B-jJj" secondAttribute="leadingMargin" constant="15" id="cdv-u2-j2v"/>
@@ -149,6 +171,7 @@
                                                 <constraint firstItem="3eF-ez-dom" firstAttribute="leading" secondItem="Zm8-BT-hci" secondAttribute="leading" id="lrQ-MI-3EO"/>
                                                 <constraint firstItem="mZM-eK-0gu" firstAttribute="leading" secondItem="t81-2B-jJj" secondAttribute="leadingMargin" constant="15" id="mua-iV-Bdn"/>
                                                 <constraint firstItem="oH9-Kh-DOi" firstAttribute="leading" secondItem="t81-2B-jJj" secondAttribute="leadingMargin" constant="15" id="mvX-ub-YDt"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5IW-4p-8wi" secondAttribute="trailing" constant="50" id="nQF-md-3pY"/>
                                                 <constraint firstItem="mZM-eK-0gu" firstAttribute="top" secondItem="7Yg-zn-8Js" secondAttribute="bottom" constant="8" id="nQc-mY-wK5"/>
                                                 <constraint firstItem="bqB-tO-Fwl" firstAttribute="height" secondItem="6BK-l6-CvY" secondAttribute="height" id="o3P-kX-orh"/>
                                                 <constraint firstItem="oH9-Kh-DOi" firstAttribute="top" secondItem="JPU-Bi-na0" secondAttribute="bottom" constant="7" id="o9s-Iq-oez"/>
@@ -165,11 +188,14 @@
                                         <connections>
                                             <outlet property="captionLabel" destination="oH9-Kh-DOi" id="aqf-F9-Upa"/>
                                             <outlet property="commentImageView" destination="bqB-tO-Fwl" id="EnL-2K-KZz"/>
+                                            <outlet property="courseName" destination="Pha-wF-dyp" id="vc9-Ub-zSF"/>
+                                            <outlet property="gross" destination="Hu1-X5-O5h" id="126-m4-ILD"/>
                                             <outlet property="likeCountButton" destination="JPU-Bi-na0" id="PbN-jb-Lan"/>
                                             <outlet property="likeImageView" destination="6BK-l6-CvY" id="bXI-47-3aj"/>
                                             <outlet property="nameLabel" destination="i1M-pv-ay8" id="oZS-q6-5z9"/>
                                             <outlet property="postImageView" destination="mZM-eK-0gu" id="x93-oK-7cd"/>
                                             <outlet property="profileImageView" destination="7Yg-zn-8Js" id="2p2-gK-zCS"/>
+                                            <outlet property="score" destination="5IW-4p-8wi" id="n2L-Wd-8jP"/>
                                             <outlet property="shareImageView" destination="y0i-Ax-2yJ" id="3Er-Tn-D8a"/>
                                         </connections>
                                     </tableViewCell>

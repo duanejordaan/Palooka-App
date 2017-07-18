@@ -10,6 +10,10 @@ import Foundation
 class Post {
     var caption: String?
     var photoUrl: String?
+    var courseName: String?
+    var gross: String?
+    var score: String?
+    
 }
 
 extension Post {
@@ -18,6 +22,10 @@ extension Post {
         
         post.caption = dict["caption"] as? String
         post.photoUrl = dict["photoUrl"] as? String
+        post.courseName = dict["courseName"] as? String
+        post.gross = dict["gross"] as? String
+        post.score = dict["score"] as? String
+        
         return post
     }
     
